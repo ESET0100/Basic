@@ -25,7 +25,7 @@ int main() {
     int counter = 0; 	// Initialize counter variable
     int max_blinks = 5; 	// Maximum number of blinks
     int threshold = 3; 	// Threshold for conditional check
-
+    
     // Loop to blink the LED
     // The for loop iterates a known number of times (max_blinks)
     for(counter=0;counter<max_blinks;counter++){
