@@ -4,6 +4,33 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function counter(){
+  //console.log(x);
+  var a=5;
+  //console.log(x)
+  var b=10
+  //console.log(x);
+  var add=(a,b)=>a+b;
+  
+  console.log(add(a,b));
+
+//destructuring props
+  const user={name:"John",age:30};
+  const{name,age}=user;
+  console.log(name);
+  console.log(age);
+
+//spread operator
+  const prev={name:"John",age:30};
+  const next={...prev,age:31};
+  console.log(next);
+
+//rest operator (destructing arrays)
+  const arr1=[1,2,3];
+  const arr2=[4,5,6];
+  const arr3=[...arr1,...arr2];
+  console.log(arr3);
+
+
   return (
     <div>
     <h1 id='cntr'>0</h1>
