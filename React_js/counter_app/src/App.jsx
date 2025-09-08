@@ -5,7 +5,7 @@ import './App.css'
 
 function counter(){
   //console.log(x);
-  var a=5;
+  var a=5; 
   //console.log(x)
   var b=10
   //console.log(x);
@@ -67,6 +67,7 @@ function counter(){
   // maximum accumulator
   const max=nums.reduce((acc,curr)=>acc>curr?acc:curr);
   console.log(max);
+
 
 
   return (
