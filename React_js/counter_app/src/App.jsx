@@ -30,6 +30,44 @@ function counter(){
   const arr3=[...arr1,...arr2];
   console.log(arr3);
 
+//interpolation
+  const greeting="Hello";
+  const place="World";
+  console.log(`${greeting}, ${place}!`);
+
+//object shorthand
+  const x=10;
+  const y=20;
+  const point={x,y};
+  console.log(point);
+  console.log(point.x,point.y);
+
+//method shorthand
+  const obj={
+    greet(){
+      console.log("Hello");
+    }
+  };
+  obj.greet();
+
+//map function
+  const items=[1,2,3];
+  const doubled=items.map(item=>item*2);
+  console.log(doubled);
+
+//filter function
+  const numbers=[1,2,3,4,5];
+  const even=numbers.filter(num=>num%2===0);
+  console.log(even);
+
+//reduce function
+  const nums=[1,2,3,4];
+  const sum=nums.reduce((acc,curr)=>acc+curr,1);
+  console.log(sum);
+  // maximum accumulator
+  const max=nums.reduce((acc,curr)=>acc>curr?acc:curr);
+  console.log(max);
+
 
   return (
     <div>
