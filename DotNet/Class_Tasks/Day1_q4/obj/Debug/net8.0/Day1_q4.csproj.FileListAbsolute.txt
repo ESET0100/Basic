@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\bin\Debug\net8.0\Day1_q4.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\bin\Debug\net8.0\Day1_q4.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\bin\Debug\net8.0\Day1_q4.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\bin\Debug\net8.0\Day1_q4.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\bin\Debug\net8.0\Day1_q4.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\refint\Day1_q4.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\Day1_q4.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day1_q4\obj\Debug\net8.0\ref\Day1_q4.dll
