@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\bin\Debug\net8.0\Class_demo.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\bin\Debug\net8.0\Class_demo.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\bin\Debug\net8.0\Class_demo.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\bin\Debug\net8.0\Class_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\bin\Debug\net8.0\Class_demo.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\refint\Class_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\Class_demo.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Class_demo\obj\Debug\net8.0\ref\Class_demo.dll
