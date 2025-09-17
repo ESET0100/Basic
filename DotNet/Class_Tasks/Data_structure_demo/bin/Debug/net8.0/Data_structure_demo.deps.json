@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Data_structure_demo/1.0.0": {
+        "runtime": {
+          "Data_structure_demo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Data_structure_demo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

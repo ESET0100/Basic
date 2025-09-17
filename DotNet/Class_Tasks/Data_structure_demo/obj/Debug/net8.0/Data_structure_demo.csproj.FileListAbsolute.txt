@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\bin\Debug\net8.0\Data_structure_demo.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\bin\Debug\net8.0\Data_structure_demo.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\bin\Debug\net8.0\Data_structure_demo.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\bin\Debug\net8.0\Data_structure_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\bin\Debug\net8.0\Data_structure_demo.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\refint\Data_structure_demo.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\Data_structure_demo.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Data_structure_demo\obj\Debug\net8.0\ref\Data_structure_demo.dll
