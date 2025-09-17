@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\bin\Debug\net8.0\Book_assignment_class.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\bin\Debug\net8.0\Book_assignment_class.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\bin\Debug\net8.0\Book_assignment_class.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\bin\Debug\net8.0\Book_assignment_class.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\bin\Debug\net8.0\Book_assignment_class.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\refint\Book_assignment_class.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\Book_assignment_class.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Book_assignment_class\obj\Debug\net8.0\ref\Book_assignment_class.dll
