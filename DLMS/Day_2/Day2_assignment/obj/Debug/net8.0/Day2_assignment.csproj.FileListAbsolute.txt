@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\bin\Debug\net8.0\Day2_assignment.exe
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\bin\Debug\net8.0\Day2_assignment.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\bin\Debug\net8.0\Day2_assignment.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\bin\Debug\net8.0\Day2_assignment.dll
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\bin\Debug\net8.0\Day2_assignment.pdb
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.dll
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\refint\Day2_assignment.dll
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.pdb
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\Day2_assignment.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DLMS\Day_2\Day2_assignment\obj\Debug\net8.0\ref\Day2_assignment.dll
