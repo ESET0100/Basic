@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\bin\Debug\net8.0\Day5_data_structure.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\bin\Debug\net8.0\Day5_data_structure.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\bin\Debug\net8.0\Day5_data_structure.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\bin\Debug\net8.0\Day5_data_structure.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\bin\Debug\net8.0\Day5_data_structure.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\refint\Day5_data_structure.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\Day5_data_structure.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day5_data_structure\obj\Debug\net8.0\ref\Day5_data_structure.dll
