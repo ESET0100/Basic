@@ -5,6 +5,7 @@ import MouseEvent from './components/MouseEvent';
 import FormEvent from './components/FormEvent'; 
 import LoginComponent from './components/LoginComponent';
 import UseEffectComponent from './components/UseEffectComponent';
+import ParentComponent from './components/ParentComponent';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <FormEvent/>
     <LoginComponent/>
     <UseEffectComponent/>
+    <ParentComponent/>
     </>
   );  
 }
