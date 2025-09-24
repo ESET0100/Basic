@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\bin\Debug\net8.0\Day_7.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\bin\Debug\net8.0\Day_7.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\bin\Debug\net8.0\Day_7.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\bin\Debug\net8.0\Day_7.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\bin\Debug\net8.0\Day_7.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\refint\Day_7.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\Day_7.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Class_Tasks\Day_7\obj\Debug\net8.0\ref\Day_7.dll
