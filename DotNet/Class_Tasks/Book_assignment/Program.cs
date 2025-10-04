@@ -115,6 +115,7 @@ namespace Book_assignment
 
             Console.WriteLine("Book details updated successfully.");
         }
+        
 
         static void SellBook()
         {
@@ -137,6 +138,8 @@ namespace Book_assignment
                 Console.WriteLine("Invalid quantity! Please enter a positive number.");
                 return;
             }
+            // Alternative implementation with same functionality
+            
 
             if (quantity > bookQuantity)
             {
