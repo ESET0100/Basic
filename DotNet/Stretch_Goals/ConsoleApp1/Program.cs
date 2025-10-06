@@ -5,6 +5,7 @@ namespace ConsoleApp1
     internal class Program
     {
         static void Main(string[] args)
+            //NORMAL METHOD FOR STUDENT DETAILS
         {   /*
             Console.WriteLine("Enter the student details: ");
             Console.WriteLine("Enter the student name: ");
@@ -33,6 +34,10 @@ namespace ConsoleApp1
             Console.WriteLine("The details of student are: ");
             Console.WriteLine("Name: " + name + ", Total: " + total + ", Avg: " + avg);
             */
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // USING FUNCTIONS FOR STUDENT DETAILS
+            /*
             
             void input(ref decimal marks1,ref decimal marks2,ref decimal marks3,ref string name)
             {
@@ -68,7 +73,36 @@ namespace ConsoleApp1
             display(marks1, marks2, marks3, name);
             total(marks1, marks2, marks3);
             average(marks1, marks2, marks3); 
-            
+
+            */
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // USING CLASS FOR STUDENT DETAILS
+            /*
+            Console.WriteLine("Enter the student details: ");
+            Student student1 = new Student(1,2,3,"rahul");
+            student1.Input();
+            student1.Display();
+            student1.Average();
+            student1.Total();
+            */
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // SINGLE INHERITANCE AND MULTILEVEL INHERITANCE, POLYMORPHISM
+            Console.WriteLine("Enter the person details: ");
+            Student student1 = new Student();
+            student1.Input();
+            student1.Display();
+            student1.Average();
+            student1.Total();
+            student1.PersonInput(); // Parent class methods
+            student1.PersonDisplay();
+            student1.HumanInput(); // Grand parent class methods
+            student1.HumanDisplay();
+            student1.test(); //method overriding using virtual and override [POLYMORPHISM]
+
+
+
         }
         
     }

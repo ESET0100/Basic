@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\bin\Debug\net8.0\Assignment_1.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\bin\Debug\net8.0\Assignment_1.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\bin\Debug\net8.0\Assignment_1.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\bin\Debug\net8.0\Assignment_1.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\bin\Debug\net8.0\Assignment_1.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\refint\Assignment_1.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\Assignment_1.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Assignment_1\obj\Debug\net8.0\ref\Assignment_1.dll
