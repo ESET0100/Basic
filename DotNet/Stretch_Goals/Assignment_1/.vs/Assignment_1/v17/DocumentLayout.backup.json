@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8A132BE-E87B-4F7B-A9DD-374C64E90D67}|Assignment_1.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\assignment_1\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8A132BE-E87B-4F7B-A9DD-374C64E90D67}|Assignment_1.csproj|solutionrelative:rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A132BE-E87B-4F7B-A9DD-374C64E90D67}|Assignment_1.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\assignment_1\\ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A132BE-E87B-4F7B-A9DD-374C64E90D67}|Assignment_1.csproj|solutionrelative:ishape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IShape.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\Assignment_1\\IShape.cs",
+              "RelativeDocumentMoniker": "IShape.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\Assignment_1\\IShape.cs",
+              "RelativeToolTip": "IShape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T04:54:31.378Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "Rectangle.cs",
               "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\Assignment_1\\Rectangle.cs",
               "RelativeToolTip": "Rectangle.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T10:44:54.32Z",
               "EditorCaption": ""
@@ -41,7 +58,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\Assignment_1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T10:44:27.48Z",
               "EditorCaption": ""

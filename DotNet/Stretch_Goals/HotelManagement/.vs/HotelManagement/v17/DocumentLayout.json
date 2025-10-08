@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\hotelmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827DF251-EC07-42E9-9132-AEBB47372A53}|HotelManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Payment.cs",
+              "RelativeDocumentMoniker": "Payment.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Payment.cs",
+              "RelativeToolTip": "Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:31:25.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Booking.cs",
+              "RelativeDocumentMoniker": "Booking.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Booking.cs",
+              "RelativeToolTip": "Booking.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:28:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Room.cs",
+              "RelativeToolTip": "Room.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:27:24.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\RoomType.cs",
+              "RelativeDocumentMoniker": "RoomType.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\RoomType.cs",
+              "RelativeToolTip": "RoomType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:26:29.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Guest.cs",
+              "RelativeDocumentMoniker": "Guest.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Guest.cs",
+              "RelativeToolTip": "Guest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:25:45.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\HotelManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T07:23:38.807Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

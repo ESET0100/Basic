@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment_1
 {
-    internal class Rectangle
+    internal class Rectangle : IShape
     {
         public decimal length, breadth, area;
 
@@ -21,8 +21,8 @@ namespace Assignment_1
         public void input()
         {
             Console.WriteLine("Enter the length of rectangle: ");
-            length= Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine("Enter the breadth of rectangle: ");    
+            length = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Enter the breadth of rectangle: ");
             breadth = Convert.ToDecimal(Console.ReadLine());
         }
 
@@ -30,21 +30,32 @@ namespace Assignment_1
         {
             decimal ar = length * breadth;
             area = ar;
-            
         }
 
-        public void display()        
+        public void display()
         {
             Console.WriteLine($"Length: {length}, Breadth: {breadth}");
             Console.WriteLine("The area of rectangle is: " + area);
-           
         }
 
-        public Rectangle Areasum(decimal area1, decimal area2)
+        // Interface implementation - CalculateArea method
+        public decimal CalculateArea()
         {
-            Rectangle rect= new Rectangle();
-            rect.area = area1 + area2;
-            return rect;
+            return length * breadth;
+        }
+
+        // Interface implementation - DisplayInfo method
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Rectangle - Length: {length}, Breadth: {breadth}, Area: {area}");
+        }
+
+        // Operator overloading for + operator
+        public static Rectangle operator +(Rectangle rect1, Rectangle rect2)
+        {
+            Rectangle result = new Rectangle();
+            result.area = rect1.area + rect2.area;
+            return result;
         }
     }
 }
