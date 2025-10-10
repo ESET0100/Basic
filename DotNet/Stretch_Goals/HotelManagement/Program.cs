@@ -6,43 +6,39 @@ namespace HotelManagement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hotel Management System");
-            Console.WriteLine("Getting Connection ...");
+            Console.WriteLine("=== HOTEL MANAGEMENT SYSTEM ===");
+            Console.WriteLine("Initializing Database Connection...\n");
 
-            var datasource = @"DESKTOP-49AG27E\SQLEXPRESS"; // your server
-            var database = "hotel"; // your database name
-
-            // Create your connection string
-            string connString = @"Data Source=" + datasource + ";Initial Catalog=" + database +
-            ";Trusted_Connection=True;" + "TrustServerCertificate=True;";
-
-            Console.WriteLine(connString);
-
-            SqlConnection conn = new SqlConnection(connString);
+            // Create database connection object
+            Database_conn dbConnection = new Database_conn();
+            SqlConnection conn = dbConnection.GetConnection();
 
             try
             {
-                Console.WriteLine("Opening Connection ...");
                 // Open the connection
-                conn.Open();
-                Console.WriteLine("Connection successful!");
+                if (dbConnection.OpenConnection())
+                {
+                    Console.WriteLine("Database connected successfully!\n");
 
                 // Check what tables exist in the database
-                CheckTables(conn);
+                    dbConnection.CheckTables();
 
-                // Insert sample data into all tables
-                //InsertGuest(conn);
-                //InsertRoomType(conn);
-                //InsertRoom(conn);
-                //InsertBooking(conn);
-                //InsertPayment(conn);
-
-                // Display all tables
-                DisplayGuest(conn);
-                DisplayRoomType(conn);
-                DisplayRoom(conn);
-                DisplayBooking(conn);
-                DisplayPayment(conn);
+                    // Handle login authentication
+                    if (HandleLogin(conn))
+                    {
+                        // Run the menu-driven program only if login is successful
+                        RunMenu(conn);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Access denied. Exiting the system...");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Failed to connect to database. Exiting...");
+                    return;
+                }
             }
             catch (Exception e)
             {
@@ -51,229 +47,440 @@ namespace HotelManagement
             finally
             {
                 // Close the connection
-                conn.Close();
+                dbConnection.CloseConnection();
             }
         }
 
-        // Guest table methods
-        static void InsertGuest(SqlConnection conn)
+        // Login system
+        static bool HandleLogin(SqlConnection conn)
         {
-            Console.WriteLine("Inserting Guest...");
-            string query = "INSERT INTO Guests (GuestID, FirstName, LastName, Email, Phone, Addr) VALUES (@GuestID, @FirstName, @LastName, @Email, @Phone, @Address)";
-            SqlCommand cm = new SqlCommand(query, conn);
-            cm.Parameters.AddWithValue("@GuestID", 10);
-            cm.Parameters.AddWithValue("@FirstName", "Lakshay");
-            cm.Parameters.AddWithValue("@LastName", "Saxena");
-            cm.Parameters.AddWithValue("@Email", "Lakshaysaxena13@email.com");
-            cm.Parameters.AddWithValue("@Phone", "7905687703");
-            cm.Parameters.AddWithValue("@Address", "Joy Apartment, New Delhi");
+            Console.WriteLine("\n=== STAFF LOGIN SYSTEM ===");
+            Console.WriteLine("Welcome to Hotel Management System!");
+            Console.WriteLine("Only authorized staff can access the database.\n");
 
-            int rows = cm.ExecuteNonQuery();
-            if (rows > 0)
+            while (true)
             {
-                Console.WriteLine("Guest inserted successfully");
+                Console.WriteLine("Please choose an option:");
+                Console.WriteLine("1. Existing User - Login");
+                Console.WriteLine("2. New User - Register");
+                Console.WriteLine("3. Exit System");
+                Console.Write("Enter your choice (1-3): ");
+
+                try
+                {
+                    int choice = Convert.ToInt32(Console.ReadLine());
+
+                    switch (choice)
+                    {
+                        case 1:
+                            if (HandleExistingUserLogin(conn))
+                            {
+                                Console.WriteLine("\nLogin successful! Welcome to the system.");
+                                return true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nLogin failed! Invalid credentials.");
+                                Console.WriteLine("Please try again or register as a new user.\n");
+                            }
+                            break;
+
+                        case 2:
+                            if (HandleNewUserRegistration(conn))
+                            {
+                                Console.WriteLine("\nRegistration successful! You are now logged in.");
+                                return true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nRegistration failed! Please try again.\n");
+                            }
+                            break;
+
+                        case 3:
+                            Console.WriteLine("Exiting the system...");
+                            return false;
+
+                        default:
+                            Console.WriteLine("Invalid choice. Please enter 1, 2, or 3.\n");
+                            break;
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid input. Please enter a number.\n");
+                }
             }
         }
 
-        static void DisplayGuest(SqlConnection conn)
+        static bool HandleExistingUserLogin(SqlConnection conn)
         {
-            string query = "SELECT * FROM Guests";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
+            Console.WriteLine("\n--- EXISTING USER LOGIN ---");
+            
+            Console.Write("Enter Username: ");
+            string username = Console.ReadLine();
+            
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
 
-            Console.WriteLine("\nGuest Table:");
-            while (reader.Read())
+            if (!Login.ValidateCredentials(username, password))
             {
-                int guestId = (int)reader["GuestID"];
-                string firstName = reader["FirstName"].ToString();
-                string lastName = reader["LastName"].ToString();
-                string email = reader["Email"].ToString();
-                string phone = reader["Phone"].ToString();
-                string address = reader["Addr"].ToString();
-
-                Console.WriteLine($"ID: {guestId}, Name: {firstName} {lastName}, Email: {email}, Phone: {phone}, Address: {address}");
+                return false;
             }
-            reader.Close();
+
+            return Login.AuthenticateUser(conn, username, password);
         }
 
-        // RoomType table methods
-        static void InsertRoomType(SqlConnection conn)
+        static bool HandleNewUserRegistration(SqlConnection conn)
         {
-            Console.WriteLine("Inserting Room Type...");
-            string query = "INSERT INTO RoomTypes (RoomTypeID, TypeName, Capacity, BasePrice) VALUES (@RoomTypeID, @TypeName, @Capacity, @BasePrice)";
-            SqlCommand cm = new SqlCommand(query, conn);
-            cm.Parameters.AddWithValue("@RoomTypeID", 10);
-            cm.Parameters.AddWithValue("@TypeName", "House");
-            cm.Parameters.AddWithValue("@Capacity", 10);
-            cm.Parameters.AddWithValue("@BasePrice", 25000.00);
+            Console.WriteLine("\n--- NEW USER REGISTRATION ---");
+            
+            Console.Write("Enter Username: ");
+            string username = Console.ReadLine();
+            
+            Console.Write("Enter Staff Name: ");
+            string staffName = Console.ReadLine();
+            
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
 
-            int rows = cm.ExecuteNonQuery();
-            if (rows > 0)
+            if (!Login.ValidateCredentials(username, password))
             {
-                Console.WriteLine("Room Type inserted successfully");
+                return false;
             }
+
+            if (string.IsNullOrEmpty(staffName))
+            {
+                Console.WriteLine("Staff name cannot be empty!");
+                return false;
+            }
+
+            Console.WriteLine("Confirming registration...");
+            return Login.RegisterNewUser(conn, username, staffName, password);
         }
 
-        static void DisplayRoomType(SqlConnection conn)
+        // Menu-driven system
+        static void RunMenu(SqlConnection conn)
         {
-            string query = "SELECT * FROM RoomTypes";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
-
-            Console.WriteLine("\nRoomType Table:");
-            while (reader.Read())
+            bool exit = false;
+            
+            while (!exit)
             {
-                int roomTypeId = (int)reader["RoomTypeID"];
-                string typeName = reader["TypeName"].ToString();
-                int capacity = (int)reader["Capacity"];
-                decimal basePrice = (decimal)reader["BasePrice"];
-
-                Console.WriteLine($"ID: {roomTypeId}, Type: {typeName}, Capacity: {capacity}, Price: ₹{basePrice}");
-            }
-            reader.Close();
-        }
-
-        // Room table methods
-        static void InsertRoom(SqlConnection conn)
-        {
-            Console.WriteLine("Inserting Room...");
-            string query = "INSERT INTO Rooms (RoomID, RoomNumber, RoomTypeID, Floor, Status, PricePerNight) VALUES (@RoomID, @RoomNumber, @RoomTypeID, @Floor, @Status, @PricePerNight)";
-            SqlCommand cm = new SqlCommand(query, conn);
-            cm.Parameters.AddWithValue("@RoomID", 10);
-            cm.Parameters.AddWithValue("@RoomNumber", "701");
-            cm.Parameters.AddWithValue("@RoomTypeID", 10);
-            cm.Parameters.AddWithValue("@Floor", 2);
-            cm.Parameters.AddWithValue("@Status", "Available");
-            cm.Parameters.AddWithValue("@PricePerNight", 2500.00);
-
-            int rows = cm.ExecuteNonQuery();
-            if (rows > 0)
-            {
-                Console.WriteLine("Room inserted successfully");
-            }
-        }
-
-        static void DisplayRoom(SqlConnection conn)
-        {
-            string query = "SELECT * FROM Rooms";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
-
-            Console.WriteLine("\nRoom Table:");
-            while (reader.Read())
-            {
-                int roomId = (int)reader["RoomID"];
-                string roomNumber = reader["RoomNumber"].ToString();
-                int roomTypeId = (int)reader["RoomTypeID"];
-                int floor = (int)reader["Floor"];
-                string status = reader["Status"].ToString();
-                decimal pricePerNight = (decimal)reader["PricePerNight"];
-
-                Console.WriteLine($"ID: {roomId}, Room: {roomNumber}, TypeID: {roomTypeId}, Floor: {floor}, Status: {status}, Price: ₹{pricePerNight}");
-            }
-            reader.Close();
-        }
-
-        // Booking table methods
-        static void InsertBooking(SqlConnection conn)
-        {
-            Console.WriteLine("Inserting Booking...");
-            string query = "INSERT INTO Bookings (BookingID, GuestID, RoomID, CheckInDate, CheckOutDate, TotalAmount, Status) VALUES (@BookingID, @GuestID, @RoomID, @CheckInDate, @CheckOutDate, @TotalAmount, @Status)";
-            SqlCommand cm = new SqlCommand(query, conn);
-            cm.Parameters.AddWithValue("@BookingID", 10);
-            cm.Parameters.AddWithValue("@GuestID", 10);
-            cm.Parameters.AddWithValue("@RoomID", 10);
-            cm.Parameters.AddWithValue("@CheckInDate", DateTime.Now);
-            cm.Parameters.AddWithValue("@CheckOutDate", DateTime.Now.AddDays(2));
-            cm.Parameters.AddWithValue("@TotalAmount", 5000.00);
-            cm.Parameters.AddWithValue("@Status", "Confirmed");
-
-            int rows = cm.ExecuteNonQuery();
-            if (rows > 0)
-            {
-                Console.WriteLine("Booking inserted successfully");
+                DisplayMainMenu();
+                int choice = GetMenuChoice();
+                
+                switch (choice)
+                {
+                    case 1:
+                        HandleGuestOperations(conn);
+                        break;
+                    case 2:
+                        HandleRoomTypeOperations(conn);
+                        break;
+                    case 3:
+                        HandleRoomOperations(conn);
+                        break;
+                    case 4:
+                        HandleBookingOperations(conn);
+                        break;
+                    case 5:
+                        HandlePaymentOperations(conn);
+                        break;
+                    case 6:
+                        HandleLoginOperations(conn);
+                        break;
+                    case 7:
+                        DisplayAllTables(conn);
+                        break;
+                    case 8:
+                        exit = true;
+                        Console.WriteLine("Thank you for using Hotel Management System!");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+                
+                if (!exit)
+                {
+                    Console.WriteLine("\nPress any key to continue...");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
             }
         }
 
-        static void DisplayBooking(SqlConnection conn)
+        static void DisplayMainMenu()
         {
-            string query = "SELECT * FROM Bookings";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
-
-            Console.WriteLine("\nBooking Table:");
-            while (reader.Read())
-            {
-                int bookingId = (int)reader["BookingID"];
-                int guestId = (int)reader["GuestID"];
-                int roomId = (int)reader["RoomID"];
-                DateTime checkInDate = (DateTime)reader["CheckInDate"];
-                DateTime checkOutDate = (DateTime)reader["CheckOutDate"];
-                decimal totalAmount = (decimal)reader["TotalAmount"];
-                string status = reader["Status"].ToString();
-
-                Console.WriteLine($"ID: {bookingId}, GuestID: {guestId}, RoomID: {roomId}, CheckIn: {checkInDate:dd/MM/yyyy}, CheckOut: {checkOutDate:dd/MM/yyyy}, Amount: ₹{totalAmount}, Status: {status}");
-            }
-            reader.Close();
+            Console.WriteLine("\n=== MAIN MENU ===");
+            Console.WriteLine("1. Guest Operations");
+            Console.WriteLine("2. Room Type Operations");
+            Console.WriteLine("3. Room Operations");
+            Console.WriteLine("4. Booking Operations");
+            Console.WriteLine("5. Payment Operations");
+            Console.WriteLine("6. Login User Management");
+            Console.WriteLine("7. Display All Tables");
+            Console.WriteLine("8. Exit");
+            Console.Write("Enter your choice (1-8): ");
         }
 
-        // Payment table methods
-        static void InsertPayment(SqlConnection conn)
+        static int GetMenuChoice()
         {
-            Console.WriteLine("Inserting Payment...");
-            string query = "INSERT INTO Payments (PaymentID, BookingID, Amount, PaymentMethod, PaymentDate, Status) VALUES (@PaymentID, @BookingID, @Amount, @PaymentMethod, @PaymentDate, @Status)";
-            SqlCommand cm = new SqlCommand(query, conn);
-            cm.Parameters.AddWithValue("@PaymentID", 10);
-            cm.Parameters.AddWithValue("@BookingID", 10);
-            cm.Parameters.AddWithValue("@Amount", 5000.00);
-            cm.Parameters.AddWithValue("@PaymentMethod", "Credit Card");
-            cm.Parameters.AddWithValue("@PaymentDate", DateTime.Now);
-            cm.Parameters.AddWithValue("@Status", "Completed");
-
-            int rows = cm.ExecuteNonQuery();
-            if (rows > 0)
+            try
             {
-                Console.WriteLine("Payment inserted successfully");
+                return Convert.ToInt32(Console.ReadLine());
+            }
+            catch
+            {
+                return -1;
             }
         }
 
-        static void DisplayPayment(SqlConnection conn)
+        static void HandleGuestOperations(SqlConnection conn)
         {
-            string query = "SELECT * FROM Payments";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
-
-            Console.WriteLine("\nPayment Table:");
-            while (reader.Read())
+            Console.WriteLine("\n=== GUEST OPERATIONS ===");
+            Console.WriteLine("1. Insert Guest");
+            Console.WriteLine("2. Display Guests");
+            Console.WriteLine("3. Update Guest");
+            Console.WriteLine("4. Delete Guest");
+            Console.WriteLine("5. Back to Main Menu");
+            Console.Write("Enter your choice (1-5): ");
+            
+            try
             {
-                int paymentId = (int)reader["PaymentID"];
-                int bookingId = (int)reader["BookingID"];
-                decimal amount = (decimal)reader["Amount"];
-                string paymentMethod = reader["PaymentMethod"].ToString();
-                DateTime paymentDate = (DateTime)reader["PaymentDate"];
-                string status = reader["Status"].ToString();
-
-                Console.WriteLine($"ID: {paymentId}, BookingID: {bookingId}, Amount: ₹{amount}, Method: {paymentMethod}, Date: {paymentDate:dd/MM/yyyy}, Status: {status}");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Guest.InsertGuest(conn);
+                        break;
+                    case 2:
+                        Guest.DisplayGuest(conn);
+                        break;
+                    case 3:
+                        Guest.UpdateGuest(conn);
+                        break;
+                    case 4:
+                        Guest.DeleteGuest(conn);
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
             }
-            reader.Close();
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
         }
 
-        // Method to check what tables exist in the database
-        static void CheckTables(SqlConnection conn)
+        static void HandleRoomTypeOperations(SqlConnection conn)
         {
-            Console.WriteLine("\nChecking existing tables in database...");
-            string query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'";
-            SqlCommand cm = new SqlCommand(query, conn);
-            SqlDataReader reader = cm.ExecuteReader();
-
-            Console.WriteLine("Existing tables:");
-            while (reader.Read())
+            Console.WriteLine("\n=== ROOM TYPE OPERATIONS ===");
+            Console.WriteLine("1. Insert Room Type");
+            Console.WriteLine("2. Display Room Types");
+            Console.WriteLine("3. Update Room Type");
+            Console.WriteLine("4. Delete Room Type");
+            Console.WriteLine("5. Back to Main Menu");
+            Console.Write("Enter your choice (1-5): ");
+            
+            try
             {
-                string tableName = reader["TABLE_NAME"].ToString();
-                Console.WriteLine($"- {tableName}");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        RoomType.InsertRoomType(conn);
+                        break;
+                    case 2:
+                        RoomType.DisplayRoomType(conn);
+                        break;
+                    case 3:
+                        RoomType.UpdateRoomType(conn);
+                        break;
+                    case 4:
+                        RoomType.DeleteRoomType(conn);
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
             }
-            reader.Close();
-            Console.WriteLine();
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
+        }
+
+        static void HandleRoomOperations(SqlConnection conn)
+        {
+            Console.WriteLine("\n=== ROOM OPERATIONS ===");
+            Console.WriteLine("1. Insert Room");
+            Console.WriteLine("2. Display Rooms");
+            Console.WriteLine("3. Update Room");
+            Console.WriteLine("4. Delete Room");
+            Console.WriteLine("5. Back to Main Menu");
+            Console.Write("Enter your choice (1-5): ");
+            
+            try
+            {
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Room.InsertRoom(conn);
+                        break;
+                    case 2:
+                        Room.DisplayRoom(conn);
+                        break;
+                    case 3:
+                        Room.UpdateRoom(conn);
+                        break;
+                    case 4:
+                        Room.DeleteRoom(conn);
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
+        }
+
+        static void HandleBookingOperations(SqlConnection conn)
+        {
+            Console.WriteLine("\n=== BOOKING OPERATIONS ===");
+            Console.WriteLine("1. Insert Booking");
+            Console.WriteLine("2. Display Bookings");
+            Console.WriteLine("3. Update Booking");
+            Console.WriteLine("4. Delete Booking");
+            Console.WriteLine("5. Back to Main Menu");
+            Console.Write("Enter your choice (1-5): ");
+            
+            try
+            {
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Booking.InsertBooking(conn);
+                        break;
+                    case 2:
+                        Booking.DisplayBooking(conn);
+                        break;
+                    case 3:
+                        Booking.UpdateBooking(conn);
+                        break;
+                    case 4:
+                        Booking.DeleteBooking(conn);
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
+        }
+
+        static void HandlePaymentOperations(SqlConnection conn)
+        {
+            Console.WriteLine("\n=== PAYMENT OPERATIONS ===");
+            Console.WriteLine("1. Insert Payment");
+            Console.WriteLine("2. Display Payments");
+            Console.WriteLine("3. Update Payment");
+            Console.WriteLine("4. Delete Payment");
+            Console.WriteLine("5. Back to Main Menu");
+            Console.Write("Enter your choice (1-5): ");
+            
+            try
+            {
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Payment.InsertPayment(conn);
+                        break;
+                    case 2:
+                        Payment.DisplayPayment(conn);
+                        break;
+                    case 3:
+                        Payment.UpdatePayment(conn);
+                        break;
+                    case 4:
+                        Payment.DeletePayment(conn);
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
+        }
+
+        static void HandleLoginOperations(SqlConnection conn)
+        {
+            Console.WriteLine("\n=== LOGIN USER MANAGEMENT ===");
+            Console.WriteLine("1. Display All Login Users");
+            Console.WriteLine("2. Update Login User");
+            Console.WriteLine("3. Delete Login User");
+            Console.WriteLine("4. Back to Main Menu");
+            Console.Write("Enter your choice (1-4): ");
+            
+            try
+            {
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Login.DisplayAllUsers(conn);
+                        break;
+                    case 2:
+                        Login.UpdateLogin(conn);
+                        break;
+                    case 3:
+                        Login.DeleteLogin(conn);
+                        break;
+                    case 4:
+                        return;
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input.");
+            }
+        }
+
+        static void DisplayAllTables(SqlConnection conn)
+        {
+            Console.WriteLine("\n=== DISPLAYING ALL TABLES ===");
+            Guest.DisplayGuest(conn);
+            RoomType.DisplayRoomType(conn);
+            Room.DisplayRoom(conn);
+            Booking.DisplayBooking(conn);
+            Payment.DisplayPayment(conn);
+            Login.DisplayAllUsers(conn);
         }
     }
     
