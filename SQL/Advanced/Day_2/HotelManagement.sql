@@ -51,6 +51,8 @@ CREATE TABLE Payments (
     Status VARCHAR(20)
 );
 
+Create table Login(username varchar(50) primary key, staff_name varchar(25), passwd varchar(30))
+
 INSERT INTO Guests (GuestID, FirstName, LastName, Email, Phone, Addr) VALUES
 (1, 'Raj', 'Sharma', 'raj.sharma@email.com', '9876543210', '123 MG Road, Mumbai, Maharashtra'),
 (2, 'Priya', 'Patel', 'priya.patel@email.com', '9876543211', '456 Brigade Road, Bangalore, Karnataka'),
@@ -107,9 +109,19 @@ INSERT INTO Payments (PaymentID, BookingID, Amount, PaymentMethod, PaymentDate, 
 (7, 7, 0.00, 'Debit Card', '2024-01-20', 'Failed'),           
 (8, 8, 8000.00, 'Online Transfer', '2024-01-21', 'Completed');
 
+INSERT INTO Login (username, staff_name, passwd) VALUES 
+('arjun.verma', 'Arjun Verma', 'Arjun@2024'),
+('sneha.reddy', 'Sneha Reddy', 'Sneha#5678'),
+('rahul.joshi', 'Rahul Joshi', 'Rahul$Secure1'),
+('pooja.mishra', 'Pooja Mishra', 'Pooja!Pass123'),
+('deepak.iyer', 'Deepak Iyer', 'Deepak*9876'),
+('kavita.choudhary', 'Kavita Choudhary', 'Kavita@2024');
+
+select* from Login
 select* from Guests
 select* from RoomTypes
 select* from Rooms
 select* from Bookings
 select* from Payments
+
 
