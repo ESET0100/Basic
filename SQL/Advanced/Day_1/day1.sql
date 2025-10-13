@@ -148,6 +148,47 @@ update teacher set course_id='CSE2051' where teacher_id=1
 update teacher set course_id='ECE3051' where teacher_id=2
 select* from teacher
 
+-- INDEX 
+CREATE INDEX idx_name ON student(name);
+select* from student
+EXEC sp_helpindex 'student'; -- Viewing the indexes on a table
+ALTER INDEX idx_name ON student REBUILD;
+DROP INDEX idx_name ON student;
+
+/* To show stats of time taken to execute */
+Set Statistics Time ON
+
+/* SCALAR SUBQUERY -> Returns a single value */
+SELECT name, (SELECT COUNT(*) FROM student) AS total_students FROM student;
+
+--SINGLE ROW SUBQUERY
+SELECT name FROM student WHERE student_id = (SELECT student_id FROM student WHERE result = 'fail');
+
+--MULTIPLE ROW SUBQUERY
+SELECT name FROM student WHERE student_id in (SELECT student_id FROM student WHERE result = 'pass');
+
+--CORELATED SUBQUERY
+SELECT name from student where marks1 < (select avg(marks1) from student)
+
+select * from student where exists(select name from student)
+
+select* from student
+select* from teacher
+select* from courses
+insert into courses values('CSE2032','DBMS')
+
+/* INNER JOIN */
+select t.name,c.course_id from teacher t INNER JOIN courses c on t.course_id=c.course_id
+
+/* LEFT JOIN */
+select t.name,c.course_id from courses c LEFT JOIN teacher t on c.course_id=t.course_id
+
+/* RIGHT JOIN */
+select t.name,c.course_id from teacher t Right JOIN courses c on c.course_id=t.course_id
+
+/* FULL OUTER JOIN */
+select t.name,c.course_id from teacher t FULL OUTER JOIN courses c on c.course_id=t.course_id
+
 
 
 
