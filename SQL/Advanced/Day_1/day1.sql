@@ -189,6 +189,221 @@ select t.name,c.course_id from teacher t Right JOIN courses c on c.course_id=t.c
 /* FULL OUTER JOIN */
 select t.name,c.course_id from teacher t FULL OUTER JOIN courses c on c.course_id=t.course_id
 
+/* PROCEDURE */ /***************************************************************************************************/
+create procedure ret_data
+@student_id int
+as
+begin
+select* from student where student_id=@student_id;
+end;
+
+exec ret_data @student_id=101;
+
+/* PROCEDURE WITH IF-ELSE */
+create procedure CheckStudentId
+@student_id int 
+as
+begin
+declare @name varchar(50); /* local variable where value is feeded from the table */
+
+select @name=name from student where student_id=@student_id;
+if @name='Lakshay'
+	print('employee is Lakshay')
+else
+	print('employee is someone else')
+end
+
+exec CheckStudentId @student_id=101
+
+
+CREATE PROCEDURE InsertStudentsWithWhile
+    @NumberOfStudents INT
+AS
+BEGIN
+    DECLARE @i INT = 1;
+    
+    WHILE @i <= @NumberOfStudents
+    BEGIN
+        INSERT INTO student (student_id, name, marks1, marks2, marks3, total, average)
+        VALUES (
+            1000 + @i,
+            'Student_' + CAST(@i AS VARCHAR(10)),
+            ROUND(RAND() * 100, 2),
+            ROUND(RAND() * 100, 2),
+            ROUND(RAND() * 100, 2),
+            0,
+            0
+        );
+        
+        SET @i = @i + 1;
+    END
+END
+
+exec InsertStudentsWithWhile @NumberOfStudents=1
+
+/* FUNCTIONS */  /******************************************************************************************************/
+CREATE FUNCTION CalculateGrade(@average FLOAT)
+RETURNS VARCHAR(2)
+AS
+BEGIN
+    DECLARE @grade VARCHAR(2);
+    
+    IF @average >= 90 SET @grade = 'A+'
+    ELSE IF @average >= 80 SET @grade = 'A'
+    ELSE IF @average >= 70 SET @grade = 'B'
+    ELSE IF @average >= 60 SET @grade = 'C'
+    ELSE IF @average >= 50 SET @grade = 'D'
+    ELSE SET @grade = 'F'
+    
+    RETURN @grade;
+END
+
+-- Using scalar functions in SELECT
+SELECT 
+    student_id,
+    name,
+    average,
+    dbo.CalculateGrade(average) as grade
+FROM student;
+
+/* TVP */ /*****************************************************************************************************************************************/
+-- Step 1: Create type and procedure
+-- Check if type and procedure exist
+
+-- Batch 1: Create type and procedure
+CREATE TYPE StudentTableType AS TABLE
+(
+    student_id INT,
+    name VARCHAR(50),
+    marks1 FLOAT,
+    marks2 FLOAT,
+    marks3 FLOAT
+);
+
+CREATE PROCEDURE DisplayStudentTVP
+    @StudentData StudentTableType READONLY
+AS
+BEGIN
+    SELECT 
+        student_id,
+        name,
+        marks1,
+        marks2,
+        marks3,
+        marks1 + marks2 + marks3 as total_marks,
+        ROUND((marks1 + marks2 + marks3) / 3.0, 2) as average_marks
+    FROM @StudentData
+    ORDER BY student_id;
+END;
+
+IF EXISTS (SELECT * FROM sys.types WHERE name = 'StudentTableType')
+    AND EXISTS (SELECT * FROM sys.objects WHERE name = 'DisplayStudentTVP' AND type = 'P')
+BEGIN
+    DECLARE @StudentData StudentTableType;
+
+    INSERT INTO @StudentData (student_id, name, marks1, marks2, marks3)
+    VALUES 
+    (1, 'John Doe', 85.5, 90.0, 78.5),
+    (2, 'Jane Smith', 92.0, 88.5, 95.0),
+    (3, 'Mike Johnson', 76.0, 82.5, 79.0);
+
+    EXEC DisplayStudentTVP @StudentData;
+END
+ELSE
+BEGIN
+    PRINT 'Type or Procedure does not exist. Please create them first.';
+END
+
+/* JSON */ /********************************************************************************************************************************************/
+-- Convert student table to JSON format
+SELECT student_id, name, marks1, marks2, marks3 FROM student FOR JSON PATH
+
+-- Convert JSON back to table format
+DECLARE @json NVARCHAR(MAX) = '
+[
+    {"student_id":101, "name":"Alice", "marks1":85, "marks2":90, "marks3":78},
+    {"student_id":102, "name":"Bob", "marks1":92, "marks2":88, "marks3":95}
+]';
+
+SELECT * FROM OPENJSON(@json)
+WITH (
+    student_id INT '$.student_id',
+    name VARCHAR(50) '$.name',
+    marks1 FLOAT '$.marks1',
+    marks2 FLOAT '$.marks2',
+    marks3 FLOAT '$.marks3'
+);
+
+-- Get just one value from JSON
+DECLARE @studentData NVARCHAR(MAX) = '{"name":"John", "age":20, "grade":"A"}';
+SELECT JSON_VALUE(@studentData, '$.name') as StudentName;  -- Returns: John
+
+-- Get entire object or array
+DECLARE @studentData NVARCHAR(MAX) = '{"name":"John", "subjects":["Math","Science"]}';
+SELECT JSON_QUERY(@studentData, '$.subjects') as Subjects;  -- Returns: ["Math","Science"]
+
+-- Change values in JSON
+DECLARE @studentData NVARCHAR(MAX) = '{"name":"John", "marks":85}';
+SET @studentData = JSON_MODIFY(@studentData, '$.marks', 90);
+SELECT JSON_VALUE(@studentData, '$.marks') as Subjects;  
+
+/* APPLY WITH JSON */  /************************************************************************************************************************/
+
+-- Add a JSON column for student hobbies
+ALTER TABLE student ADD hobbies_json NVARCHAR(MAX);
+
+-- Update with sample JSON data
+UPDATE student SET hobbies_json = '
+[
+    {"hobby": "Reading", "level": "Advanced", "years": 5},
+    {"hobby": "Swimming", "level": "Intermediate", "years": 3}
+]'
+WHERE student_id = 101;
+
+UPDATE student SET hobbies_json = '
+[
+    {"hobby": "Chess", "level": "Expert", "years": 8}
+]'
+WHERE student_id = 102;
+
+UPDATE student SET hobbies_json = NULL WHERE student_id = 103; -- No hobbies
+
+select* from student
+
+-- Get each student with their hobbies (only students with hobbies)  [APPLY]
+SELECT 
+    s.student_id,
+    s.name,
+    h.hobby,
+    h.level,
+    h.years
+FROM student s
+CROSS APPLY OPENJSON(s.hobbies_json) 
+WITH (
+    hobby VARCHAR(50) '$.hobby',
+    level VARCHAR(20) '$.level',
+    years INT '$.years'
+) AS h;
+
+-- Get ALL students, even if they have no hobbies [OUTER APPLY]
+SELECT 
+    s.student_id,
+    s.name,
+    h.hobby,
+    h.level,
+    h.years
+FROM student s
+OUTER APPLY OPENJSON(s.hobbies_json) 
+WITH (
+    hobby VARCHAR(50) '$.hobby',
+    level VARCHAR(20) '$.level',
+    years INT '$.years'
+) AS h;
+
+
+
+
+
 
 
 
