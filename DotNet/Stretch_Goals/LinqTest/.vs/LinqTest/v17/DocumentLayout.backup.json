@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\linqqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:linqqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\linqtest\\linqtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6C4D2286-23BA-4860-BCF2-4ACB7276D422}|LinqTest.csproj|solutionrelative:linqtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LinqQueryService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\LinqQueryService.cs",
+              "RelativeDocumentMoniker": "LinqQueryService.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\LinqQueryService.cs",
+              "RelativeToolTip": "LinqQueryService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:51:33.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:39:51.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LinqTest",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\LinqTest.csproj",
+              "RelativeDocumentMoniker": "LinqTest.csproj",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\LinqTest.csproj",
+              "RelativeToolTip": "LinqTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T06:39:26.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:39:11.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:38:57.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:38:45.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\LinqTest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T06:37:09.481Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
