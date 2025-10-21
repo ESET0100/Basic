@@ -138,3 +138,10 @@ C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\r
 C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\DbWebApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

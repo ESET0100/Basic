@@ -14,12 +14,13 @@ namespace DbWebApp.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<User> Users { get; set; } // NEW
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure decimal precision only - NO SEEDED DATA
+            // Configure decimal precision
             modelBuilder.Entity<Product>()
                 .Property(p => p.Price)
                 .HasColumnType("decimal(18,2)");
@@ -32,7 +33,7 @@ namespace DbWebApp.Data
                 .Property(oi => oi.UnitPrice)
                 .HasColumnType("decimal(18,2)");
 
-            // NO SeedData method - database will be completely empty
+            // No seeded data - database starts empty
         }
     }
 }
