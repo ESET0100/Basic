@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\salariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\salariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\models\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:models\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|c:\\users\\pc\\.vscode\\repos\\basic\\dotnet\\stretch_goals\\employeemanagementsystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF7A4914-7347-491A-B2E1-8F79DAEDF5EF}|EmployeeManagementSystem.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-22T05:01:55.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwEUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T05:01:09.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:38:44.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:31:51.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:31:06.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:32:50.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Salary.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Salary.cs",
+              "RelativeDocumentMoniker": "Models\\Salary.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\Salary.cs",
+              "RelativeToolTip": "Models\\Salary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:33:23.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:33:53.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:49:16.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:59:53.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SalariesController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\SalariesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SalariesController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\SalariesController.cs",
+              "RelativeToolTip": "Controllers\\SalariesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:58:54.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjectsController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\ProjectsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\ProjectsController.cs",
+              "RelativeToolTip": "Controllers\\ProjectsController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAADwv/wAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:57:51.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:35:29.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:36:03.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Models\\DTOs\\EmployeeDto.cs",
+              "RelativeToolTip": "Models\\DTOs\\EmployeeDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:36:46.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:46:08.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:45:26.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "Services\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:44:06.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:39:29.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\EmployeeService.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv6EAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:44:37.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\EmployeeManagementSystem\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T04:43:16.933Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

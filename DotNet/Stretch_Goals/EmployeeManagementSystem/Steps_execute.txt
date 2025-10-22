@@ -1,0 +1,478 @@
+EMPLOYEE MANAGEMENT SYSTEM - COMPLETE PROJECT DOCUMENTATION
+============================================================
+
+PROJECT OVERVIEW
+================
+The Employee Management System is a comprehensive C# Web API project built with ASP.NET Core 8.0, Entity Framework Core, and SQL Server. It demonstrates advanced programming concepts including JWT authentication, role-based authorization, JSON parsing, and complex database operations.
+
+TECHNOLOGY STACK
+================
+- Backend: ASP.NET Core 8.0 Web API
+- Database: SQL Server with Entity Framework Core
+- Authentication: JWT Bearer Tokens
+- JSON Handling: Newtonsoft.Json for complex JSON operations
+- Testing: Postman for API testing
+
+PROJECT STRUCTURE
+=================
+EmployeeManagementSystem/
+├── Controllers/           # API Controllers
+│   ├── AuthController.cs
+│   ├── EmployeesController.cs
+│   ├── DepartmentsController.cs
+│   ├── ProjectsController.cs
+│   ├── SalariesController.cs
+│   └── UsersController.cs
+├── Models/               # Data Models
+│   ├── Employee.cs
+│   ├── Department.cs
+│   ├── Project.cs
+│   ├── Salary.cs
+│   ├── User.cs
+│   └── DTOs/            # Data Transfer Objects
+├── Data/                # Database Context
+│   └── AppDbContext.cs
+├── Services/            # Business Logic
+│   ├── IAuthService.cs
+│   ├── AuthService.cs
+│   ├── IEmployeeService.cs
+│   └── EmployeeService.cs
+├── Migrations/          # Database Migrations
+├── Program.cs          # Application Startup
+└── appsettings.json    # Configuration
+
+DATABASE DESIGN
+===============
+The system uses 5 main tables with relationships:
+
+1. Employees Table:
+   - EmployeeId (PK), FirstName, LastName, Email, Phone
+   - DepartmentId (FK), Salary, SkillsJSON, AddressJSON
+   - CreatedDate, IsActive
+
+2. Departments Table:
+   - DepartmentId (PK), DepartmentName, Description
+   - ManagerId (FK), Budget, CreatedDate
+
+3. Projects Table:
+   - ProjectId (PK), ProjectName, Description
+   - StartDate, EndDate, Budget, TeamMembersJSON
+   - Status, DepartmentId (FK), CreatedDate
+
+4. Salaries Table:
+   - SalaryId (PK), EmployeeId (FK), BasicSalary
+   - AllowancesJSON, DeductionsJSON
+   - EffectiveDate, CreatedDate
+
+5. Users Table (Authentication):
+   - UserId (PK), Username, Email
+   - PasswordHash, PasswordSalt, Role
+   - CreatedDate, IsActive
+
+AUTHENTICATION & AUTHORIZATION SYSTEM
+=====================================
+
+JWT TOKEN WORKFLOW:
+-------------------
+1. REGISTRATION:
+   - User sends registration data (username, email, password, role)
+   - System hashes password and creates user record
+   - No token returned during registration
+
+2. LOGIN:
+   - User sends credentials (username, password)
+   - System verifies credentials and generates JWT token
+   - Token contains user claims (username, role, user ID)
+   - Token expires after 24 hours
+
+3. API ACCESS:
+   - Client includes token in Authorization header: "Bearer {token}"
+   - Server validates token on each request
+   - Based on user role, access is granted or denied
+
+ROLE-BASED AUTHORIZATION:
+-------------------------
+Three roles with different permissions:
+
+1. ADMIN:
+   - Full access to all operations
+   - Can Create, Read, Update, Delete all entities
+   - Can manage user roles and status
+   - Can assign department managers
+
+2. MANAGER:
+   - Can Create, Read, Update employees, projects, salaries
+   - Cannot Delete departments
+   - Cannot manage user accounts
+   - Read-only access to some reports
+
+3. EMPLOYEE:
+   - Read-only access to most data
+   - Can view employees, departments, projects
+   - Cannot view salaries (except own if implemented)
+   - No create, update, or delete permissions
+
+TOKEN USAGE SCENARIOS:
+----------------------
+SCENARIO 1: Accessing Protected Resources
+- Request: GET /api/employees
+- Header: Authorization: Bearer eyJhbGciOiJIUz...
+- Result: Returns employee list if token valid and role authorized
+
+SCENARIO 2: Unauthorized Access Attempt
+- Request: POST /api/employees (by Employee role)
+- Header: Authorization: Bearer {employee_token}
+- Result: 403 Forbidden - Insufficient permissions
+
+SCENARIO 3: Invalid/Expired Token
+- Request: Any protected endpoint
+- Header: Authorization: Bearer invalid_token
+- Result: 401 Unauthorized - Token invalid or expired
+
+JSON DATA HANDLING
+==================
+
+ADVANCED JSON FEATURES:
+-----------------------
+1. SKILLS STORAGE (Employees):
+   - Stored as JSON array in SkillsJSON field
+   - Example: ["C#", "SQL", "JavaScript"]
+   - Automatically serialized/deserialized using properties
+
+2. ADDRESS STORAGE (Employees):
+   - Stored as JSON object in AddressJSON field
+   - Example: {"street": "123 Main St", "city": "NYC"}
+   - Complex object handling with dictionary conversion
+
+3. TEAM MEMBERS (Projects):
+   - Stored as JSON array of employee IDs
+   - Example: [1, 2, 3]
+   - Demonstrates JSON array parsing
+
+4. ALLOWANCES & DEDUCTIONS (Salaries):
+   - Stored as JSON objects
+   - Allowances: {"housing": 5000, "transport": 2000}
+   - Deductions: {"tax": 8000, "insurance": 2000}
+   - Automatic total salary calculation
+
+JSON OPERATIONS:
+----------------
+- Serialization: Converting C# objects to JSON strings for storage
+- Deserialization: Converting JSON strings back to C# objects
+- Validation: Ensuring JSON data integrity
+- Querying: Using JSON functions in database queries
+
+IMPLEMENTATION STEPS
+====================
+
+STEP 1: PROJECT SETUP
+---------------------
+1. Create new ASP.NET Core Web API project
+2. Install required NuGet packages:
+   - Microsoft.EntityFrameworkCore
+   - Microsoft.EntityFrameworkCore.SqlServer
+   - Microsoft.EntityFrameworkCore.Tools
+   - Microsoft.AspNetCore.Authentication.JwtBearer
+   - System.IdentityModel.Tokens.Jwt (v7.0.3)
+   - Swashbuckle.AspNetCore
+   - Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+STEP 2: DATABASE CONFIGURATION
+------------------------------
+1. Create AppDbContext with DbSet properties
+2. Configure relationships in OnModelCreating
+3. Set up JSON column types for complex data
+4. Add database connection string in appsettings.json
+
+STEP 3: MODEL CREATION
+----------------------
+1. Create entity classes with data annotations
+2. Implement JSON properties with [NotMapped] attributes
+3. Create DTOs for API data transfer
+4. Configure navigation properties and foreign keys
+
+STEP 4: AUTHENTICATION SETUP
+----------------------------
+1. Implement User model with password hashing
+2. Create AuthService for registration and login
+3. Configure JWT authentication in Program.cs
+4. Set up password hashing with HMACSHA512
+
+STEP 5: SERVICE LAYER
+---------------------
+1. Create service interfaces (IAuthService, IEmployeeService)
+2. Implement business logic in service classes
+3. Handle database operations and error handling
+4. Implement JSON serialization/deserialization
+
+STEP 6: CONTROLLER IMPLEMENTATION
+---------------------------------
+1. Create API controllers with proper routing
+2. Implement CRUD operations for each entity
+3. Add role-based authorization attributes
+4. Implement advanced features (reports, analysis)
+
+STEP 7: MIGRATIONS AND DATABASE
+-------------------------------
+1. Create initial migration: dotnet ef migrations add InitialCreate
+2. Update database: dotnet ef database update
+3. Verify database creation and table structure
+
+STEP 8: TESTING
+---------------
+1. Test registration and login endpoints
+2. Verify role-based access control
+3. Test CRUD operations for all entities
+4. Validate JSON data handling
+5. Test error scenarios and edge cases
+
+DATA FLOW EXPLANATION
+=====================
+
+ADDING DATA WORKFLOW:
+---------------------
+1. OBTAIN JWT TOKEN:
+   - First, register a user or use existing credentials
+   - Login to receive JWT token
+   - Store token for subsequent requests
+
+2. CREATE DEPARTMENT (Admin only):
+   - POST /api/departments
+   - Headers: Authorization: Bearer {token}, Content-Type: application/json
+   - Body: JSON with department details
+   - System validates Admin role, creates department
+
+3. CREATE EMPLOYEE (Admin/Manager):
+   - POST /api/employees
+   - Headers: Authorization: Bearer {token}, Content-Type: application/json
+   - Body: JSON with employee details including Skills and Address as objects
+   - System automatically converts objects to JSON for storage
+
+4. CREATE PROJECT (Admin/Manager):
+   - POST /api/projects
+   - Headers: Authorization and Content-Type as above
+   - Body: JSON with project details and TeamMembers as array
+   - JSON array stored in database
+
+5. CREATE SALARY (Admin/Manager):
+   - POST /api/salaries
+   - Headers: Authorization and Content-Type as above
+   - Body: JSON with salary details, Allowances and Deductions as objects
+   - System calculates TotalSalary automatically
+
+DISPLAYING DATA WORKFLOW:
+-------------------------
+1. GET ALL EMPLOYEES:
+   - GET /api/employees
+   - Headers: Authorization: Bearer {token}
+   - System checks role (Admin/Manager/Employee)
+   - Returns list with JSON fields automatically parsed
+
+2. GET SPECIFIC EMPLOYEE:
+   - GET /api/employees/{id}
+   - Returns employee details with Skills and Address as proper objects
+
+3. GET DEPARTMENT WITH EMPLOYEES:
+   - GET /api/departments/{id}
+   - Returns department details with employee list
+   - Shows relationship navigation
+
+4. ADVANCED REPORTS:
+   - GET /api/departments/{id}/budget-analysis
+   - Uses complex SQL operations with JSON parsing
+   - Returns calculated metrics and analysis
+
+API ENDPOINTS DETAILS
+=====================
+
+AUTH ENDPOINTS:
+---------------
+POST /api/auth/register
+- No authentication required
+- Creates new user account
+- Request: {username, email, password, role}
+
+POST /api/auth/login  
+- No authentication required
+- Returns JWT token
+- Request: {username, password}
+
+EMPLOYEE ENDPOINTS:
+-------------------
+GET    /api/employees                    - Admin,Manager,Employee
+GET    /api/employees/{id}              - Admin,Manager,Employee  
+POST   /api/employees                   - Admin,Manager
+PUT    /api/employees/{id}              - Admin,Manager
+DELETE /api/employees/{id}              - Admin
+GET    /api/employees/{id}/salary-analysis - Admin,Manager
+
+DEPARTMENT ENDPOINTS:
+---------------------
+GET    /api/departments                 - All roles
+GET    /api/departments/{id}            - All roles
+POST   /api/departments                 - Admin
+PUT    /api/departments/{id}            - Admin
+DELETE /api/departments/{id}            - Admin
+GET    /api/departments/{id}/budget-analysis - Admin,Manager
+
+PROJECT ENDPOINTS:
+------------------
+GET    /api/projects                    - All roles
+GET    /api/projects/{id}               - All roles
+POST   /api/projects                    - Admin,Manager
+PUT    /api/projects/{id}               - Admin,Manager
+DELETE /api/projects/{id}               - Admin
+GET    /api/projects/status-report      - Admin,Manager
+
+SALARY ENDPOINTS:
+-----------------
+GET    /api/salaries                    - Admin,Manager
+GET    /api/salaries/employee/{employeeId} - Admin,Manager,Employee (own)
+POST   /api/salaries                    - Admin,Manager
+GET    /api/salaries/salary-distribution - Admin
+
+USER MANAGEMENT:
+----------------
+GET    /api/users                       - Admin
+PUT    /api/users/{id}/role             - Admin
+PUT    /api/users/{id}/status           - Admin
+
+ADVANCED FEATURES IMPLEMENTED
+=============================
+
+1. JSON PARSING AND STORAGE:
+   - Complex object serialization/deserialization
+   - JSON array handling for team members and skills
+   - JSON object handling for addresses and financial data
+
+2. ADVANCED SQL OPERATIONS:
+   - CTE-like operations for salary analysis
+   - CASE statements for salary distribution
+   - GROUP BY for project status reports
+   - Complex joins with JSON data
+
+3. ERROR HANDLING:
+   - Global exception handling
+   - Custom error responses
+   - Validation error handling
+   - Database constraint violations
+
+4. SECURITY FEATURES:
+   - Password hashing with salt
+   - JWT token expiration
+   - Role-based access control
+   - Secure API endpoints
+
+TESTING METHODOLOGY
+===================
+
+MANUAL TESTING WITH POSTMAN:
+----------------------------
+1. Start with registration and login
+2. Test each endpoint with proper authorization
+3. Verify role-based access control
+4. Test JSON data handling
+5. Validate error responses
+
+TEST SCENARIOS:
+---------------
+SCENARIO 1: Admin Full Access
+- Register admin → Login → Create all entities → Access all endpoints
+
+SCENARIO 2: Manager Limited Access  
+- Register manager → Login → Create employees/projects/salaries → Cannot delete departments
+
+SCENARIO 3: Employee Read-Only
+- Register employee → Login → View data → Cannot modify anything
+
+SCENARIO 4: Invalid Access Attempts
+- Try accessing endpoints without token
+- Try accessing admin endpoints with employee token
+- Test with expired tokens
+
+TROUBLESHOOTING GUIDE
+=====================
+
+COMMON ISSUES AND SOLUTIONS:
+----------------------------
+1. MIGRATION ERRORS:
+   - Delete Migrations folder and recreate
+   - Use: dotnet ef migrations remove (multiple times if needed)
+   - Then: dotnet ef migrations add InitialCreate
+
+2. DATABASE CONNECTION:
+   - Verify connection string in appsettings.json
+   - Ensure SQL Server is running
+   - Check database name and credentials
+
+3. JWT TOKEN ISSUES:
+   - Verify secret key in appsettings.json
+   - Check token expiration
+   - Validate token in jwt.io for debugging
+
+4. JSON SERIALIZATION ERRORS:
+   - Ensure Newtonsoft.Json is configured
+   - Check JSON property names match
+   - Validate JSON format in requests
+
+5. ROLE AUTHORIZATION ERRORS:
+   - Verify user role in database
+   - Check [Authorize] attributes in controllers
+   - Ensure token contains correct role claims
+
+PROJECT DEPLOYMENT
+==================
+
+LOCAL DEPLOYMENT:
+-----------------
+1. Build project: dotnet build
+2. Run database migrations: dotnet ef database update
+3. Start application: dotnet run
+4. Access via: https://localhost:7235
+
+PRODUCTION CONSIDERATIONS:
+--------------------------
+1. Use production database (Azure SQL, etc.)
+2. Configure proper CORS policies
+3. Set up HTTPS in production
+4. Use environment-specific app settings
+5. Implement logging and monitoring
+
+MAINTENANCE AND EXTENSIONS
+==========================
+
+POTENTIAL ENHANCEMENTS:
+-----------------------
+1. Add email verification
+2. Implement password reset functionality
+3. Add file upload for employee documents
+4. Implement real-time notifications
+5. Add more advanced reporting
+6. Implement caching for better performance
+7. Add audit logging for security
+
+MAINTENANCE TASKS:
+------------------
+1. Regular database backups
+2. Token secret rotation
+3. Dependency updates
+4. Security patches
+5. Performance monitoring
+
+CONCLUSION
+==========
+This Employee Management System demonstrates modern web API development practices with advanced features like JWT authentication, role-based authorization, JSON data handling, and complex database operations. The project serves as a comprehensive example of enterprise-level application development using .NET technologies.
+
+The system is designed to be scalable, maintainable, and secure, following best practices in software architecture and development methodologies.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TOKEN - [ADMIN]  
+
+eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMSIsImV4cCI6MTc2MTE5OTc0Mn0.Qnq3rwXmvxonH8DSykva0EHOblsIP0jwp5Q86GOkZKoxH-ANMF-14H0EraXoe1HUxX_l6H28ptTIhhFwYLpiNA
+
+TOKEN - [USER/EMPLOYEE]
+
+eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZW1wbG95ZWUxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRW1wbG95ZWUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjMiLCJleHAiOjE3NjEyMDkxMDB9.Q1p_AyEPsFeutGkG6TbKqjQAcqupiZBerMGW-Ldfa-meHC1lTDKCMnz_wfALSxVJUdu7F-WbqwqetS0RhC32Rw
+
+
