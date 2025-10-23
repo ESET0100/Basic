@@ -1,0 +1,15 @@
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\bin\Debug\net8.0\Singleton.exe
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\bin\Debug\net8.0\Singleton.deps.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\bin\Debug\net8.0\Singleton.runtimeconfig.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\bin\Debug\net8.0\Singleton.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\bin\Debug\net8.0\Singleton.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.AssemblyInfoInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.AssemblyInfo.cs
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.csproj.CoreCompileInputs.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.sourcelink.json
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\refint\Singleton.dll
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.pdb
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\Singleton.genruntimeconfig.cache
+C:\Users\PC\.vscode\Repos\Basic\DotNet\Stretch_Goals\Singleton\obj\Debug\net8.0\ref\Singleton.dll

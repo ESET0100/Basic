@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AUKrRiSPP6w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\.vscode\\Repos\\Basic\\DotNet\\Stretch_Goals\\Ioc_Di_test\\Ioc_Di_test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.10\\microsoft.extensions.dependencyinjection.9.0.10.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.10\\microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
